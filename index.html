@@ -1,0 +1,19 @@
+ <!DOCTYPE html>
+<html>
+<title>Index Of</title>
+<script>
+    //rendere inutilizzabile la stringa non contenente la chiocciola
+    email=prompt("Digita l'email");
+    chiocciola=email.indexOf("@");
+    punto=email.indexOf(".");
+    //indice è uguale a -1 se non esiste
+    if (chiocciola==-1 || punto==-1) {
+       alert("formato email non valido");
+    }
+    else {
+        alert("formato email valido, la chiocciola è nella posizione "+chiocciola+" e il punto in posizione "+punto);
+    }
+</script>
+<body>
+</body>
+</html> 
